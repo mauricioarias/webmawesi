@@ -1,0 +1,44 @@
+<!-- headerAdmin contiene el menu principal
+administrar Blog 
+Administrar Proyectos
+lo muestra si la cuenta esta abierta
+
+adminLogin -> abrir cuenta
+-->
+
+	<% if user_signed_in? %>
+	<section class="loginAdmin">
+		<%=(image_tag "fondo-administrador.jpeg") %>
+		<header id="header" class="loading" style="opacity:1; border-button:1px solid #777; z-index:3;" >
+			<div id="logo">
+				<a href="#">
+					<%= link_to (image_tag "logo_web.png"), root_path %>
+				</a>
+			</div>
+			<nav id="nav" style="z-index:6;">
+				<ul>
+					<% if user_signed_in? %>
+						<li id="fat-menu" >
+							<a href="#" data-toggle="dropdown">Cuenta <b class="caret"></b></a>
+							<ul class="menuAdminUser" >
+								<%= link_to "Editar", edit_user_registration_path %>
+								<!--%= link_to "Nueva",  new_user_registration_path % -->
+								<%= link_to "Salir", destroy_user_session_path %>
+							</ul>
+						</li>
+						<li>|</li>
+						<li><%= link_to 'Administrar Proyectos', projects_path %></li> &nbsp; &nbsp;
+						<li>|</li>
+						<li><%= link_to "Administrar Blog" , usuario_path %></li>&nbsp; &nbsp; 
+					<% end %>
+				</ul>
+			</nav>
+		</header>
+	</section>
+	
+	<% else %>
+	<section class="loginAdmin">
+		<%=(image_tag "fondo-administrador.jpeg") %>
+		<%= render :partial => "layouts/adminLogin" %>
+	</section>
+	<% end %>

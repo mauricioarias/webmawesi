@@ -1,0 +1,52 @@
+<!-- vista proyectos web  -->
+<%= render :partial => "layouts/subheader" %>
+<!-- Section -->
+<section>
+  <div id="service">
+    <div id="img_all">
+      <%= (image_tag "desk.jpg") %>
+      <div id="title_txt"><%= @desarrolloWeb %></div>
+    </div>
+    <div id="contentW">
+      <div id="innerW">
+ <!--  inicio listado de proyectos - -  - - - - -  -  - -->
+        <% @project.each do |project| %>
+        <% if project.tipo == "1" %>
+
+          <div class="">
+             <!-- h5><%= project.title %></h5>
+              <h6><%= project.text %></h6 -->
+              <%= image_tag project.imagen.url %>
+            </div>
+            <% end %>
+         <% end %>
+<!--  fin listado de proyectos - - - -   - - - - -  - -->
+
+      </div><!-- fin  innerW -->
+       <div id="rightW">
+          <div>
+          <h3><%= @tituloContenido %></h3>
+          <p><%=  @contenidopreferido1 %></p>
+          <p><%=  @contenidopreferido2%></p>  
+          </div>
+          <div class="sect">
+            <h3><%= @tituloUx %></h3>
+            <p><%= @contenidoUx %></p>
+          </div>
+          <div class="sect">
+            <h3><%= @tituloAgilidad %></h3>
+            <p><%= @contenidoAgilidad %></p>
+          </div>
+          <div class="sect">
+            <h3><%= @tituloCloud %></h3>
+            <p><%= @contenidoAgilidad %></p>
+          </div>
+          <div class="sect">
+            <h3><%= @tituloExperiencia %></h3>
+            <p><%= @contenidoExperiencia %></p>
+          </div>
+      </div><!-- fin  right -->
+  </div><!-- fin  content -->
+  </div>
+</section>
+<%= render :partial => "layouts/subfooter" %>

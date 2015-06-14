@@ -1,0 +1,33 @@
+<%= render :partial => "layouts/headerblog" %>
+<!-- Section -->
+<section>
+	<div id="service">
+		<div id="img_all">
+			<%= link_to (image_tag "StartupStockPhotos57.jpg") %>
+			<div id="title_txt">Blog</div>
+		</div>
+		<div id="content">
+			<div id="inner">
+				
+				<div class="rightPost">
+					<h1 ><%= @article.title %></h1>
+						<a>Autor:  <%= @article.autor %></a>
+					<div id="opciones">
+	                    <%= link_to 'Todos los Artículos', articles_path %>&nbsp;
+	                    <!-- agregando comentarios -->
+	                    <a class="opinar" href="#">| Opinar</a>
+		                <div class="comentario">
+		               		<%= render "comments/form" %>
+	                 	</div><br>
+	                </div>
+	                <p><%= @article.text %></p>
+	                <!-- mostrar comentarios anteriores -->
+	                <div class="sect"></div>
+					<a >Comentarios</a><br>
+					<%= render @article.comments %>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<%= render :partial => "layouts/subfooter" %>

@@ -1,0 +1,12 @@
+<div class="contentComent">
+<%= form_for([@article, @article.comments.build]) do |f| %>
+	<!--<input class="emailUsuario" type="email" name="emailUsuario" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}" placeholder="Tu email"></input-->
+	<p class="comment_commenter"><%= f.label :Nombre %><br>
+	   <%= f.text_field :commenter %>
+	</p>
+	<p ><%= f.label :Comentario %><br>
+	   <%= f.text_area :body %>
+	</p>
+	<h1><%= f.submit %></h1>
+<% end %>
+</div>

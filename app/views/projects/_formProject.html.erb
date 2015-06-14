@@ -1,0 +1,31 @@
+<section>
+  <div id="service">
+    <div id="content">
+      <div id="inner">
+        <div class="rightPost">
+          <!-- formulario para nuevo articulo-->
+          <%= form_for @project, :html => {:multipart => true}  do |f| %>
+          <!-- Mensaje de error para tamano del titulo-->
+            <% if @project.errors.any? %>
+              <div id="error_explanation">
+                <a><%=pluralize(@project.errors.count, "Error")%> , Este proyecto no pudo ser guardado:</a> 
+                <ul>
+                  <% @project.errors.full_messages.each do |msg| %>
+                    <li><a><%= msg %></a></li>
+                  <% end %> 
+                </ul>
+              </div>
+            <% end %>
+            <div>
+              <p>Titulo </p><%= f.text_field :title %><br>   
+              <p>Tipo </p><%= f.select(:tipo, options_for_select([['Web', 1], ['Software', 2]])) %><br>
+              <p>Descripción</p><%= f.text_field :text %><br>
+              <p>Seleccionar Imagen</p> <%= f.file_field :imagen %></div><br>
+            <div class="botonForm"><%= f.submit %></div>
+            <div class="botonForm"><%= link_to 'Regresar' , projects_path %></div>
+           <% end %>
+        </div>
+      </div>
+    </div
+  </div>
+</section>

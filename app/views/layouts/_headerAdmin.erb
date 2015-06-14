@@ -1,0 +1,42 @@
+<header id="header" class="loading" style="opacity:1; border-button:1px solid #777; z-index:3;" >
+	<div id="logo">
+		<a href="#">
+			<%= link_to (image_tag "logo_web.png"), root_path %>
+		</a>
+	</div>
+
+	<nav id="nav" style="z-index:6;">
+		<ul>
+		<% if user_signed_in? %>
+			<li id="fat-menu" >
+				<a href="#" data-toggle="dropdown">Cuenta <b class="caret"></b></a>
+				<ul class="menuAdminUser" >
+					<%= link_to "Editar", edit_user_registration_path %>
+					<!-- %= link_to "Nueva",  new_user_registration_path %-->
+					<%= link_to "Salir", destroy_user_session_path %>
+				</ul>
+				</li>
+				<li>|</li>
+				<li><%= link_to 'Administrar Proyectos', projects_path %></li> &nbsp; &nbsp;
+				<li>|</li>
+				<li><%= link_to "Administrar Blog" , usuario_path %></li>&nbsp; &nbsp; 
+			<% end %>
+		</ul>
+	</nav>
+</header>
+<section>
+	<div id="service">
+		<div id="img_all">
+			<%= link_to (image_tag "StartupStockPhotos57.jpg") %>
+			<div id="title_txt" style="font-size:50px !important; line-height:150px;">Administrador</div>
+		</div>
+		<div id="content">
+			<div id="inner">
+				<div class="rightPost">
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+

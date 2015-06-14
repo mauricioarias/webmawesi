@@ -1,0 +1,48 @@
+Searching 291 files for "#rightPost"
+
+/Users/MAWESI/Trabajo/webMawesi/app/assets/stylesheets/style.css:
+ 1475      	outline:0px;
+ 1476      }
+ 1477:     #content #inner .rightPost  #opciones #comentario .nombreUsuario,  #content #inner #rightPost  .opciones #comentario .emailUsuario{
+ 1478      	width: 150px;
+ 1479      }
+
+1 match in 1 file
+
+
+Searching 291 files for "#rightPost"
+
+0 matches across 0 files
+
+
+Searching 291 files for "id="rightPost""
+
+/Users/MAWESI/Trabajo/webMawesi/app/views/articles/_form.html.erb:
+    8  				<div id="leftPost">
+    9  				</div>
+   10: 				<div id="rightPost">
+   11  					<!-- formulario para nuevo articulo-->
+   12  					<%= form_for @article  do |f| %>
+
+/Users/MAWESI/Trabajo/webMawesi/app/views/articles/new.html.erb:
+   11  				<div id="leftPost">
+   12  				</div>
+   13: 				<div id="rightPost">
+   14  					<h1 >Nuevo Articulo</h1>
+   15  					<%= render 'form' %>
+
+/Users/MAWESI/Trabajo/webMawesi/app/views/articles/show.html.erb:
+   17  					</table-->
+   18  				</div>
+   19: 				<div id="rightPost">
+   20  					<h1 >TITULO / SLOGAN</h1>
+   21  						<p><strong>Tema:<%= @article.title %></strong></p>
+
+/Users/MAWESI/Trabajo/webMawesi/app/views/brand/blog.html.erb:
+   20  					</div>
+   21  				</div>
+   22: 				<div id="rightPost">
+   23  					<h1 >TITULO / SLOGAN</h1>
+   24  					<div class="sect">
+
+4 matches across 4 files

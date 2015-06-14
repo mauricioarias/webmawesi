@@ -1,0 +1,19 @@
+<%= render :partial => "layouts/headerAdmin" %>
+	<section>
+	<div id="service">
+		<div id="contentW">
+			<div id="innerW">
+				<div class="rightW">
+				<p>
+					<strong>Tutulo:</strong>
+					<%= @project.title %><br><br>		
+					<%= image_tag @project.imagen.url %><br>
+					<div class="botonForm"><%= link_to 'Regresar' , projects_path %></div>
+				</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	</section>
+
+<%= render :partial => "layouts/subfooter" %>

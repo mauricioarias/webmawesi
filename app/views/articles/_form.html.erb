@@ -1,0 +1,32 @@
+<!-- Section -->
+<section>
+	<div id="service">
+		<div id="content">
+			<div id="inner">
+				<div class="rightPost">
+					<!-- formulario para nuevo articulo-->
+					<%= form_for @article  do |f| %>
+					<!-- Mensaje de error para tamano del titulo-->
+						<% if @article.errors.any? %>
+							<div id="error_explanation">
+								<a><%=pluralize(@article.errors.count, "Error")%> , No se puede guardar este post:</a> 
+								<ul>
+									<% @article.errors.full_messages.each do |msg| %>
+										<li><a><%= msg %></a></li>
+									<% end %> 
+								</ul>
+							</div>
+						<% end %>
+						<div><p>Autor </p><%= f.text_field  :autor, :value => @user.email %></div><br> 
+						<div><p>Titulo </p> <%= f.text_field :title %></div><br>
+						<div><p >Descripción</p> <%= f.text_field :descripcion %></div><br>
+						<div><p id="textEdit">Contenido </p > <%= f.text_area :text %></div><br>
+						<div class="botonForm"><%= f.submit %></div>
+           				<div class="botonForm"><%= link_to 'Regresar' , usuario_path %></div>
+					<% end %>
+				</div>
+			</div>
+		</div
+	</div>
+</section>
+

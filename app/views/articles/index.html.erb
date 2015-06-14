@@ -1,0 +1,41 @@
+<%= render :partial => "layouts/headerblog" %>
+<!-- Section -->
+<section>
+	<div id="service">
+		<div id="img_all">
+			<%= link_to (image_tag "StartupStockPhotos57.jpg") %>
+			<div id="title_txt">Blog</div>
+		</div>
+		<div id="content">
+			<div id="inner">
+        <div id="post_antiguo" class="leftPost">
+           <hr>
+          <h3 class="subTitulo"><%= @anteriores %><h3>
+            <hr>
+            <% @articles.each do |article| %>
+              <div class="post_antiguo">
+                <a><%=link_to article.title  , article_path(article) %></a>
+              </div>
+           <% end %>
+        </div>
+				<div class="rightPost">
+					<h1 >DESIGN + DEVELOPMENT</h1>
+          <!--  inicio listado de post - - - -  - - - - -  - - - - -  - - - - - - - -  - - - - -  -  - - - - -  - -->
+					<% @articles.each do |article| %>
+            <div class="sect">
+               <h3><%= article.title %>  |  Autor:  <%= article.autor %></h3>
+               <p>Descripción:&nbsp;<%= article.descripcion %></p>
+               <p>Descripción:&nbsp;<%= article.text %></p>
+               <div id="opciones">
+                    <a id="mas"><%= link_to 'Más', article_path(article) %></a>
+               </div> <br><br>
+             </div>
+           <% end %>
+           <!--  fin listado de post - - - -  - - - - -  - - - - -  - - - - - - - -  - - - - -  -  - - - - -  - -->
+					
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<%= render :partial => "layouts/subfooter" %>

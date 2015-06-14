@@ -1,0 +1,81 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+es:
+  #para home	
+  loQueHacemos: Lo Que Hacemos
+  textoloQueHacemos: "En Mawesi Design + Development hacemos y superamos las expectativas de nuestros clientes. En cada línea de código depositamos nuestra pasión y compromiso para desarrollar los mejores productos del mundo.  Nos enfocamos en brindar soluciones de software a la medida, desarrollo de aplicaciones web,  desarrollo de aplicaciones móviles y diseño de páginas web."
+  software: Desarrollo de Software
+  diseno: "Diseño Web"
+  equipo: Equipo De Trabajo
+  nJose: Jose M. Valencia
+  fraseJose: "No sigamos a donde nos puede llevar el camino. Vayamos en lugar donde no hay camino y dejemos un rastro. Proverbio Japonés"
+  nWalther: Walther Sanchez
+  fraseWalther: "Soy una persona sencilla, me gusta salir a trotar y realizar caminatas ecológicas. Escuchar música rock, salir y degustar de una buena comida."
+  nSandra: Sandra Mosquera
+  fraseSandra: "“Las mejores ideas vienen como chistes. Haz tus pensamientos tan divertidos como puedas.”  David Ogilvy."
+  nMauricio: Mauricio Arias 
+  fraseMauricio: "'Si no puedes explicarlo simplemente, no lo entiendes bien.' Albert Einstein."
+  nJorge: Jorge Giraldo
+  fraseJorge: "Arriba el fútbol, la guitarra y la cerveza."
+  #para desarrollo de software
+  desarrolloSoftware: Desarrollo de Software
+  tituloClientes: Algunos de nuestros clientes
+  tituloContenido: "¿Por qué nos prefieren?"
+  contenidopreferido: "Somos una empresa de software donde nos preocupamos por la estrategia de nuestros clientes. Contamos con un equipo multidisciplinario con diferentes especialidades que nos permite siempre brindar la solución efectiva. Pensamos en soluciones para toda la empresa y en el ROI de nuestros clientes. Mawesi Design + Development es una empresa de desarrollo de software en Colombia. Hacemos desarrollo de software a la medida bajo tecnologías como JAVA, .NET, ORACLE, PHP y utilizando diferentes metodologías como SCRUM y ITIL. Nuestro proceso de desarrollo es sencillo e involucra activamente al cliente para tener 0 costos ocultos y lograr la satisfacción de este. No nos limitamos con desarrollar software, vamos más allá y generamos un valor agregado con nuestras soluciones; pensamos en la estrategia del cliente, los usuarios, la tecnología adecuada y en el costo correcto. Buscamos por medio de ideas y software increíble ayudar a grandes empresas, pequeñas empresas y personas a cumplir con sus objetivos. En Mawesi Design + Development estamos convencido en usar la tecnología para facilitar la vida de nuestros clientes y como una herramienta fundamental en la estrategia del negocio."
+  tituloSoftware: Desarrollo de Software
+  contenidoSoftware: "Cada línea de código realizada por el equipo Mawesi, demuestra con pasión y compromiso lo que nos caracteriza: Productos de calidad, escalables, de última tecnología y multiplataforma."
+  tituloAgilidad: Agilidad
+  contenidoAgilidad: "Contamos con un equipo multidisciplinario que es apasionado en lo que hace. Tenemos la agilidad de mirar la empresa como un todo y de convertir la tecnología en un elemento fundamental para la estrategia de la compañía."
+  tituloCloud: Computación en la nube
+  contenidoCloud: "Hoy en día las empresas no quieren incurrir en gastos de infraestructura tecnológica y soportar aplicaciones de software que al largo plazo son costosas y difíciles de mantener. Mawesi Design + Development es consciente de esto por lo tanto ofrecemos almacenar el Software desarrollado en nuestros servidores"
+  tituloExperiencia: Experiencia
+  contenidoExperiencia: "Con un equipo con más de 7 años de experiencia en el desarrollo de software a la medida y desarrollo de aplicaciones web, se fundó Mawesi Design + Development en el año 2013. Desde su fundación se ha contado con importantes clientes que aún siguen mostrándonos su aprecio y confianza."
+  #para diseno web
+  desarrolloWeb: Desarrollo Web
+  proyecto1: Titulo y fecha
+  proyecto2: Titulo y fecha
+  proyecto3: Titulo y fecha
+  proyecto4: Titulo y fecha
+  proyecto5: Titulo y fecha
+  proyecto6: Titulo y fecha
+  tituloContenido: "¿Por qué nos prefieren?"
+  contenidopreferido1: "Somos una agencia web con presencia nacional e Internacional. Hemos realizado desarrollo de páginas web en Colombia y en otros países con los mejores resultados. Nos preocupamos por brindarles a nuestros clientes la mejor solución en imagen y presencia web. Nuestras páginas web son diseñadas para asegurar el posicionamiento SEO del cual también nos hacemos responsables."
+  contenidopreferido2: "Nuestro objetivo es sorprender a nuestros clientes, darles más por menos y siempre superar sus expectativas. Interfaces únicas, de fácil manejo y entendimiento bajo diseños extraordinarios son nuestros pilares. Estamos orgullosos de nuestros diseños en Mawesi Design + Development y el respaldo de nuestros clientes es nuestro premio."
+  tituloUx: "Ux"
+  contenidoUx: "Queremos que nuestros clientes sorprendan y cautiven en Internet. Hacemos que la experiencia del usuario sea única bajo diseños amigables y alineados con la estrategia de mercadeo de nuestros clientes."
+  tituloAgilidad: "Agilidad"
+  contenidoAgilidad: "Contamos con un equipo multidisciplinario que es apasionado en lo que hace. Tenemos la agilidad de mirar la empresa como un todo y de convertir la tecnología en un elemento fundamental para la estrategia de la compañía."
+  tituloCloud: Computación en la nube
+  contenidoCloud: "Hoy en día las empresas no quieren incurrir en gastos de infraestructura tecnológica y soportar aplicaciones de software que al largo plazo son costosas y difíciles de mantener. Mawesi Design + Development es consciente de esto por lo tanto ofrecemos almacenar el Software desarrollado en nuestros servidores."
+  tituloExperiencia: Experiencia
+  contenidoExperiencia: "Con un equipo con más de 7 años de experiencia en el desarrollo de software a la medida, desarrollo de aplicaciones web y diseño web, se fundó Mawesi Design + Development en el año 2013. Desde su fundación se ha contado con importantes clientes que aún siguen mostrándonos su aprecio y confianza."
+  #para header
+  botonIntro: Intro
+  botonQueHacemos: Lo Que Hacemos
+  botonNosotros: Nosotros
+  espanol: "Español"
+  ingles: "Ingles"
+  #para blog
+  anteriores: Anteriores
+
+
+

@@ -1,0 +1,17 @@
+<%= render :partial => "layouts/headerAdmin" %>
+<!-- Section -->
+<section>
+	<div id="service">
+		<div id="content">
+			<div id="inner">
+				<div class="rightPost">
+					<h2 style="margin:inherit; margin-top:40px; font-size:30px;">Editando Proyecto</h2>
+					 <a class="imgEditProject"><%= image_tag @project.imagen.url %></a>
+					<%= render 'formProject' %>
+
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<%= render :partial => "layouts/subfooter" %>

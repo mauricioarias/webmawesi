@@ -1,0 +1,16 @@
+<header id="header">
+<!-- Logo -->
+	<div id="logo"><%= link_to (image_tag "logo_web.png"), root_path %></div>
+<!-- Nav -->
+	<nav id="nav">
+		<ul>
+			<li><%= link_to @botonIntro ,('#intro') %></li>
+			<li><%= link_to @botonQueHacemos ,('#one') %></li>
+			<li><%= link_to @botonNosotros ,('#two') %></li>
+			<li><%= link_to "Blog" , controller: 'articles' %></li>
+			<li>|</li>
+			<li><%= link_to @espanol, :locale=>'es' %></li>
+            <li><%= link_to @ingles, :locale=>'en' %></li>
+		</ul>
+	</nav>
+</header>

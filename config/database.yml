@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: '5'
+
+development:
+  <<: *default
+  database: webmawesi_development
+
+test:
+  <<: *default
+  database: webmawesi_test
+
+production:
+  <<: *default
+  database: webmawesi_production
+  #  username: webmawesi
+  #  password: <%= ENV['webmawesi_DATABASE_PASSWORD'] %>

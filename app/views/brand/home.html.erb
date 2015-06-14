@@ -1,0 +1,70 @@
+<% content_for :head do %>
+	<meta name="description" content="Mawesi Design + Development es una agencia de software a la medida, diseño web y marketing digital dispuesta a superar las expectativas del cliente cuando de resultados se trata.  Nos encargamos de realizar diseño web en Colombia bajo las ultimas tecnologías y metodologías. Las aplicaciones web que desarrollamos están 100% orientas para obtener la mejor experiencia de usuario posible." />
+	<meta name="keywords" content="diseño de paginas web en Colombia, marketing digital en Colombia, desarrollo de software, desarrollo de software en Colombia, desarrollo de software en Cali, desarrollo de software en medellin,diseño paginas web bogota,aplicaciones web,diseño de paginas web en poptroxbogota,paginas web medellin,desarrollo de aplicaciones moviles,desarrollo de software en Colombia, diseño web en Colombia, diseño web en medellin,desarrollo de paginas web,diseño web en Cali, software a la medida, empresas de desarrollo de software, aplicaciones móviles, empresas de software en Colombia, desarrollo de software Colombia, desarrollo de aplicaciones web, desarrollo aplicaciones móviles" />
+<% end %>
+<!--h1>Brand#home este es mi home</h1>
+<p>Find me in app/views/brand/home.html.erb</p-->
+<%= render :partial => "layouts/header" %>
+<!-- Intro -->
+<section id="intro" class="main style1 dark fullscreen">
+	<div class="content container small">
+		<footer>
+			<a><%= link_to (image_tag "logo_web_high.jpg")%></a>
+			<a href="#one" class="button style2 down">Mas</a>
+		</footer>
+	</div>
+</section>
+<!-- One -->
+<section id="one" class="main style2 right dark fullscreen">
+	
+	<div class="content box style2">
+		<header>
+			<h2><%= @loQueHacemos %></h2>
+		</header>
+		<p><%= @textoloQueHacemos %></p>
+	</div>
+	<div class="wwd_titles">
+		<div class="title"><%= link_to @software, vistaSoftware_path %></div>
+		<div class="title"><%= link_to @diseno, vistaWeb_path %></div>
+	</div>
+	<a href="#two" class="button style2 down anchored">Next</a>
+</section>
+<!-- Two -->
+<section id="two" class="main style2 left dark "> <!-- fullscreen propiedad para espacio superior e inferior -->
+	<header>
+		<h2>&nbsp;  &nbsp; <%= @equipo %></h2>
+	</header>
+	<div class="equipo" class="content box">  
+		<%=  (image_tag "equipo/jose.png")%> 
+		<h1> <%= @nJose %></h1>
+		<div class='informacion'>
+			<p><%= @fraseJose %></p>
+		</div>
+	</div>
+	<div class="equipo" class="content box">
+		<%=  (image_tag "equipo/sandra.png")%> 
+		<h1><%= @nSandra %></h1>
+		<div class='informacion'>
+			<p><%= @fraseSandra %></p>
+		</div>
+	</div>
+	<div class="equipo" class="content box">
+		<%=  (image_tag "equipo/mauro.png")%>
+		<h1><%= @nMauricio %></h1>
+		<div class='informacion'>
+			<p><%= @fraseMauricio %></p>
+		</div>
+	</div>
+	<div class="equipo" class="content box" >
+		<%=  (image_tag "equipo/jorge.png")%>
+		<h1><%= @nJorge %></h1>
+		<div class='informacion'>
+			<p><%= @fraseJorge  %></p>
+		</div>
+	</div>
+</section>
+<section id="redes" class="main style2 left dark">
+	<div  class="fb-like-box" data-href="https://www.facebook.com/mawesisoftware?ref=bookmarks" data-width="300" data-height="250" data-colorscheme="light" data-show-faces="true" data-header="true" data-stream="false" data-show-border="false" style="overflow: hidden;" ></div>
+	<div><a class="twitter-timeline" data-dnt="true"  href="https://twitter.com/mawesisoftware" data-widget-id="529719870770798592">Tweets by @mawesisoftware</a></div>
+</section>
+<%= render :partial => "layouts/footer" %>

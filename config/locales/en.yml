@@ -1,0 +1,70 @@
+# Files in the config/locales directory are used for internationalization
+# and are automatically loaded by Rails. If you want to use locales other
+# than English, add the necessary files in this directory.
+#
+# To use the locales, use `I18n.t`:
+#
+#     I18n.t 'hello'
+#
+# In views, this is aliased to just `t`:
+#
+#     <%= t('hello') %>
+#
+# To use a different locale, set it with `I18n.locale`:
+#
+#     I18n.locale = :es
+#
+# This would use the information in config/locales/es.yml.
+#
+# To learn more, please read the Rails Internationalization guide
+# available at http://guides.rubyonrails.org/i18n.html.
+
+en:
+  #para home  
+  loQueHacemos: What we do
+  textoloQueHacemos: "In Mawesi Design + Development we do and exceed our customers expectations. In every line of code we put our passion and commitment to develop the best products possible. We focus on providing custom software solutions, web application development, mobile application development and web design."
+  software:  Software Development
+  diseno: "Web Design"
+  equipo: Our team 
+  nJose: Jose M. Valencia
+  fraseJose: "Let us not follow where the path may lead. Let us go instead where there is no path, and leave a trail. Japanese proverb."
+  nWalther: Walther Sanchez
+  fraseWalther: "I am a simple person, I like to go jogging and eco-walks. Listen to rock music, go out and enjoy a good meal."
+  nSandra: Sandra Mosquera
+  fraseSandra: "“The best ideas come as jokes. Get your thoughts as fun as you can.”  David Ogilvy."
+  nMauricio: Mauricio Arias 
+  fraseMauricio: "“If you can't explain it simply, you don't understand it well enough.” Albert Einstein."
+  nJorge: Jorge Giraldo
+  fraseJorge: "All about footy, guitar and beer"
+  #para desarrollo de software
+  desarrolloSoftware: Software Development
+  tituloClientes: Some of our clients
+  tituloContenido: "Why do clients prefer us?"
+  tituloSoftware: "Software Development"
+  contenidoSoftware: "Each line of code made by our team shows the passion and commitment that characterize us: quality, scalable, latest technology and cross-platform products"
+  tituloAgilidad: Agility
+  contenidoAgilidad: "We have a multidisciplinary team that is passionate about what they make. We have the ability of looking at the company as a whole and turning technology into a fundamental element for the company's strategy."
+  tituloCloud: Cloud Computing
+  contenidoCloud: "Nowadays, companies do not want to incur in technological infrastructure and support software applications expenses, which are costly and difficult to maintain in the long term. We are aware of this and therefore offer to store the Software on our servers."
+  tituloExperiencia: Experience
+  contenidoExperiencia: "A team with more than 7 years of experience in custom software development and web application development, Mawesi Design + Development was founded in 2013. Since it's founding, we have worked with important customers, who still continue to show us their esteem and confidence."
+  #para diseno web
+  desarrolloWeb: Web Desing
+  proyecto1: Tittle and Date
+  proyecto2: Tittle and Date
+  proyecto3: Tittle and Date
+  proyecto4: Tittle and Date
+  proyecto5: Tittle and Date
+  proyecto6: Tittle and Date
+  contenidopreferido1: "We are a web agency with a national and international presence. We have made web development in Colombia and other countries with great results. We care about providing our customers the best solution in terms of image and web presence. Our sites are designed to guarantee the SEO for positioning, which we also are responsible for."
+  contenidopreferido2: "Our goal is to surprise our customers, giving them more for less and always exceeding their expectations. Unique interfaces and great usability, under extraordinary designs, are our pillars. We are proud of our designs in Mawesi Design + Development and our customer's satisfaction and support is our award."
+  tituloUx: "Ux"
+  contenidoUx: "We want our customers to surprise and captivate online. We create a unique user experience under friendly designs, aligned with our client's marketing strategy."
+  #para header
+  botonIntro: Introduction
+  botonQueHacemos: What We Do
+  botonNosotros: Us
+  ingles: "English"
+  espanol: "Spanish"
+  #para blog
+  anteriores: Previous

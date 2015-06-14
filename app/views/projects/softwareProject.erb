@@ -1,0 +1,50 @@
+<%= render :partial => "layouts/headerAdmin" %>
+<!-- Section -->
+<section>
+	<div id="service">
+		<div id="content">
+			<div id="inner">
+				<div >
+					 <div  class="leftPost">
+			          <h1 class="botonUser"><%= link_to "Nuevo Proyecto" , new_project_path %></h1>
+			          <h1 class="botonUser"><%= link_to  "Web" , webProject_path %><h1>
+			            <h1 class="botonUser"><%= link_to "Software" , softwareProject_path %><h1>
+			          	 <hr>
+			         		 <h3 class="subTitulo"><%= @anteriores %><h3>
+			            <hr>
+
+			            <% @project.each do |project| %>
+			              <div class="post_antiguo">
+			                <a><%= link_to  project.title , edit_project_path(project) %></a><br><br>
+			              </div>
+			           <% end %>
+			        </div><!-- fin  leftPost -->
+					<div class="rightPost">
+			          <br>
+			          <!--  inicio listado de post - - - -  - - - - -  - - - - -  - - - - - - - -  - - - - -  -  - - - - -  - -->
+			          <% @project.each do |project| %>
+			       	   <% if project.tipo == "2"  %>
+				            <div class="sect">
+				            	<h3 ><%= project.title %></h3>
+				                  <h3>Tipo: Software </h3>
+					               <div id="opciones">
+					                  <a class="botonEliminar"><%= button_to 'Eliminar', project_path(project), method: :delete, :onclick => "return confirm('Estas seguro de eliminar este proyecto?')" %></a>
+					                  <a><%= link_to '|  Editar', edit_project_path(project) %></a>
+					                  <a><%= link_to '|  Show', project_path(project) %></a>
+					                  <br><br>
+					                  <p><%= project.text %></p>
+					                  <%= image_tag project.imagen.url %>
+					                  <!-- agregando comentarios -->
+					               </div><!-- fin  opciones -->
+				             </div><!-- fin  sect -->
+		            	 <% end %> <!-- fin if -->
+			           <% end %>
+			           <!--  fin listado de post - - - -  - - - - -  - - - - -  - - - - - - - -  - - - - -  -  - - - - -  - -->
+			        </div> <!-- fin  rightPost -->
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<%= render :partial => "layouts/subfooter" %>
+

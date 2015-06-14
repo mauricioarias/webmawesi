@@ -1,0 +1,49 @@
+<%= render :partial => "layouts/headerAdmin" %>
+<!-- Section -->
+<section>
+	
+		<div id="content">
+			<div id="inner">
+					<!--table>
+					</table-->
+        <div  class="leftPost">
+          <h1 class="botonUser"><%= link_to "Nuevo Articulo" , controller: 'articles', action:'new'  %></h1>
+           <hr>
+            <h3 class="subTitulo"><%= @anteriores %><h3>
+          <hr>
+
+            <% @articles.each do |article| %>
+              <div class="post_antiguo">
+                <a><%= link_to  article.title , edit_article_path(article) %></a><br><br>
+              </div>
+           <% end %>
+        </div><!-- fin  leftPost -->
+        
+				<div class="rightPost">
+          <br>
+          <!--  inicio listado de post - - - -  - - - - -  - - - - -  - - - - - - - -  - - - - -  -  - - - - -  - -->
+					<% @articles.each do |article| %>
+            <div class="sect">
+               <h3><%= article.title %>  |  Autor:  <%= article.autor %></h3>
+               <div id="opciones">
+                  <a class="botonEliminar"><%= button_to 'Eliminar', article_path(article), method: :delete, :onclick => "return confirm('Estas seguro de eliminar este post?')" %></a>
+                  <a><%= link_to '|  Editar', edit_article_path(article) %></a>
+                  <br><br>
+                  <p>descripcion: <%= article.descripcion %></p>
+
+                  <p><%= article.text %></p>
+                  <!--&nbsp;
+                  <a class="contenido" href="#"> |  Ver Contenido</a>
+                  <div class="contenidoCompleto"><p><%= article.text %></p>
+                    </div><br>
+                  -->
+                  <!-- agregando comentarios -->
+               </div> <br><!-- fin  opciones -->
+             </div><!-- fin  sect -->
+           <% end %>
+           <!--  fin listado de post - - - -  - - - - -  - - - - -  - - - - - - - -  - - - - -  -  - - - - -  - -->
+				</div> <!-- fin  rightPost -->
+    </div><!-- fin  inner -->
+	</div><!-- fin  content -->
+</section>
+<%= render :partial => "layouts/subfooter" %>

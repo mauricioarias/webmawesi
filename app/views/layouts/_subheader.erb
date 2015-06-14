@@ -1,0 +1,15 @@
+<!-- Header -->
+<header id="header">
+<!-- Logo -->
+	<div id="logo"><%= link_to (image_tag "logo_web.png"), root_path %></div>
+<!-- Nav -->
+	<nav id="nav">
+		<ul>
+			<li href="#two"><%= link_to "Desarrollo de Software", vistaSoftware_path %></li>
+			<li>|</li>
+			<li><%= link_to "Diseño web", vistaWeb_path %></li>
+			<li>|</li>
+			<li><%= link_to "Blog" , controller: 'articles' %></li>
+		</ul>
+	</nav>
+</header> 

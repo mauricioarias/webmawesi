@@ -1,0 +1,30 @@
+#content #inner #leftPost{
+		float:left;
+		width:130px;
+		text-align:left;
+		margin-left:10px;
+	}
+#content #inner #leftPost .post_antiguo{
+	vertical-align: top;
+	/*width:30%;*/
+	text-align:left;
+	padding: 0px 0;
+	margin: 0;
+}
+#content #inner #leftPost .post_antiguo h1{
+	font-size: 12px;
+	font-weight: bold;
+	border-bottom: 1px solid #ccc;
+	text-align: left;
+	text-transform: uppercase;
+}
+#content #inner #leftPost .post_antiguo .contPostAntiguo{
+	font-size: 13px;
+	font-weight: lighter;
+	margin-top: -10%;
+	line-height: 16px;
+}
+#content #inner #leftPost .postAntiguo{
+	font-size: 10px;
+	text-align: left;
+}
